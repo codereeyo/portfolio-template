@@ -30,12 +30,16 @@ a{
 }
 
 .navbar{
+    position: absolute;
     max-width: 1200px;
-    margin: auto;
+    width: 100%;
+    /* margin: auto; */
     padding: 28px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 50%;
+    transform: translateX(-50%);
     /* gap: 2rem 1rem; */
 }
 
@@ -72,7 +76,7 @@ a{
 }
 
 #menu li a:hover{ 
-    color: var(--tertiary-color);
+    color: var(--text-color);
 }
 
 #hamburger-menu{
@@ -84,7 +88,7 @@ a{
 .hero-section{
     max-width: 1200px;
     margin: auto;
-    padding: 60px 30px;
+    padding: 0 30px 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -92,6 +96,7 @@ a{
 
 .hero-content{
     max-width: 50%;
+    padding-top: 150px;
 }
 
 .hero-content h3{
@@ -335,6 +340,7 @@ a{
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
+    position: relative;
 }
 
 .media-container{
@@ -359,10 +365,10 @@ a{
     font-size: 14px;
 }
 
-.footer-container svg{
+.footer-container .footer-vector{
     width: 100vw;
     height: auto;
-    margin-top: -200px; 
+    margin-top: -200px;
 }
 
 /* RESPONSIVE  */
@@ -387,6 +393,9 @@ a{
     .project-content{
         max-width: 80%;
         padding: 64px;
+    }
+    .footer-container .footer-vector{
+        margin-top: -100px;
     }
 }
 
@@ -413,6 +422,9 @@ a{
     }
     .hero-content h1{
         max-width: 100%;
+    }
+    .footer-container .footer-vector{
+        margin-top: -80px;
     }
 }
 
@@ -444,5 +456,8 @@ a{
     }
     hr{
         width: 30%!important;
+    }
+    .footer-container .footer-vector{
+        margin-top: -50px;
     }
 }
