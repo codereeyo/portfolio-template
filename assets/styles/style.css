@@ -21,6 +21,11 @@ html, body{
     overflow-x: hidden;
 }
 
+html{
+    scroll-behavior: smooth;
+    /* scroll-padding: ; */
+}
+
 body{
     background-color: #F9FAFF;
 }
@@ -41,6 +46,7 @@ a{
     margin-left: 50%;
     transform: translateX(-50%);
     /* gap: 2rem 1rem; */
+    
 }
 
 .logo a{
@@ -413,8 +419,9 @@ a{
         align-items: center;
     }
     .hero-image{
-        max-width: 100%;
-        margin-bottom: 30px;
+        /* max-width: 100%;
+        margin-bottom: 30px; */
+        display: none;
     }
     .hero-content{
         max-width: fit-content;
